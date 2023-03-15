@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinos</title>
+</head>
+<style>
+ * {
+  box-sizing:border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background-color:  black;
+  padding: 4px;
+  text-align: center;
+  font-size: 1px;
+  color: white;
+  height: 210px;
+}
+
+nav {
+  float: left;
+  width: 31%;
+  height: 1500px;
+  background: rgb(148, 138, 82);
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 30px;
+  width: 69%;
+  height: 100%;
+  background-color: beige;
+  height: 1500px; 
+}
+
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer {
+  background-color: black;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  height: 100%;
+}
+
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+   }
+   
+   h1 {
+       color: rgb(124, 106, 2);
+       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+       font-size: 175%;
+   }
+   h3 {
+       color: rgb(148, 138, 82);
+       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+       font-size: 150%;
+   }
+   p {
+       color: rgb(10, 10, 10);
+       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+       font-size: 150%;
+   }
+   ul.b {
+     list-style-type: square;
+     ;
+   }
+   
+   .video {
+     background-color: rgb(180, 192, 194);
+     border: 2px solid rgb(165, 111, 39);
+     margin: 20px;
+     padding: 20px;
+   }
+   table, th, td {
+      border:1px solid rgb(173, 151, 54); 
+      background-color: silver;
+      
+    }
+    td,th {
+        text-align: center;
+    }
+   </style>
+<body>
+      
+<header>
+    <h2><img src="../IMG/Logos/Watson.jpg" alt="Logo del Hotel Watson" width="250" height="180"></h2>
+  </header>
+
+<section>
+    <nav>
+      <h1 style="color: white;font-size: 200%;">Página principal</h1>
+      <a href="../hotels.html"><img src="../IMG/Logos/casa1.png" alt="Casa" width="50" height="50"></a>
+      <h1 style="color: rgba(5, 109, 57, 0.733);font-size: 200%;">Experiencias</h1>
+      <a href="../HTML/experiencia.html"><img style="border-radius: 20px;" src="../IMG/Experiencias/Exp.jpg" alt="Experiencias" width="350" height="150"></a>
+      <br>
+      <br>
+      <br>
+      <h1 style="color:rgba(87, 7, 7, 0.884);font-size: 200%;">Mas vendidos</h1>
+      <a href="../HTML/hotel1.html"><img style="border-radius: 20px;" src="../IMG/Hoteles/wyndham.jpg" alt="Hotel 2" width="350" height="150"></a>
+      <br>
+      <br>
+      <a href="../HTML/hotel2.html"><img style="border-radius: 20px;" src="../IMG/Hoteles/hotel ramada.jpg" alt="Hotel 2" width="350" height="150"></a>
+      <br>
+      </nav>
+    <article>
+        <h1>Guayaquil</h1>
+        <p>Guayaquil se destaca entre las ciudades ecuatorianas por su elevado uso de tránsito masivo, y por su densidad total y la diversidad de su población. El puerto de la ciudad es uno de los más importantes de la costa del Pacífico oriental.</p>
+        <table style="width:100%">
+            <tr>
+            <th>Hotel</th>
+            <th>Imágenes</th>
+            <th>Descripción</th>
+            <th>Detalles</th>
+            </tr>
+            <tr><div class="th">
+                <td>Hotel Ramada</td>
+                <td><img src="../IMG/Hoteles/hotel ramada.jpg" width="200" height="250"></td>
+                <td>El Hotel Ramada se encuentra en el centro de Guayaquil y ofrece vistas a los jardines del malecón y al río Guayas. Sirve un desayuno gratuito y cuenta con piscina cubierta, solárium, sauna, centro de fitness y WiFi gratuita. Las habitaciones del Hotel Ramada disponen de aire acondicionado, TV por cable y WiFi gratuita, y algunas tienen vistas panorámicas al río. El Hotel Ramada cuenta con 2 sitios para comer. El restaurante La Balsa sirve cocina local, mientras que el Riva Delicatessen ofrece repostería y sándwiches recién hechos.</td>
+                <td><a href="../HTML/hotel2.html">Reserva aqui</a></td>
+            </tr>
+            <tr>
+                <td>Hilton Colon</td>
+                <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgVjOmsbVoAoHVIjMOGmD3dAyhAdvQrALCvQ&usqp=CAU.jpg" width="200" height="250"></td>
+                <td>El Hilton Colon, situado a 1 km del centro comercial San Marino y del barrio del centro de la localidad, ofrece alojamiento de lujo completo seguro en habitaciones amplias con TV LCD, así como piscina, 5 restaurantes y 2 bares. Las habitaciones del Hilton Colon Guayaquil disponen de aire acondicionado, cerradura electrónica, ventanas insonorizadas, secador de pelo y zona de trabajo. Algunas también tienen terraza o solárium. Además, el establecimiento cuenta con zona de jardín tropical y centro de bienestar y spa..</td>
+                <td><a href="../HTML/Hotel guayaquil 2.html">Reserva aqui</a></td>
+                </tr>
+
+        </table>
+    </article>
+
+    <footer>
+    <div style="background-color:black;">
+        <p style="color:black;">.....................................</p> 
+        <p style="color:white; text-align:center">Copyright © 2022 Watson Hotel S.A. Todos los derechos reservados.</p>
+        <center><img src="../IMG/Logos/Watson.jpg" alt="Logo del Hotel Watson" width="100" height="75"></center>
+        </div>
+    </footer>
+</section>
+</body>
+</html>

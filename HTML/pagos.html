@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Ramada</title>
+</head>
+<style>
+ * {
+  box-sizing:border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background-color:  black;
+  padding: 4px;
+  text-align: center;
+  font-size: 1px;
+  color: white;
+  height: 210px;
+}
+
+nav {
+  float: left;
+  width: 31%;
+  height: 1500px;
+  background: rgb(148, 138, 82);
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 30px;
+  width: 69%;
+  height: 100%;
+  background-color: beige;
+  height: 1500px; 
+}
+
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer {
+  background-color: black;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  height: 100%;
+}
+
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+ h1 {
+    color: rgb(124, 106, 2);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 165%;
+    
+}
+h2 {
+    color: black(124, 106, 2);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 125%;
+  }
+h3 {
+    color: rgb(148, 138, 82);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 150%;
+}
+p {
+    color: rgb(10, 10, 10);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 120%;
+}
+ul.b {
+  list-style-type: square;
+  ;
+}
+
+
+</style>
+</head>
+<body>
+
+    
+<header>
+  <h2><img src="../IMG/Logos/Watson.jpg" alt="Logo del Hotel Watson" width="250" height="180"></h2>
+</header>
+
+<section>
+  <nav>
+    <h1 style="color: white;font-size: 200%;">Página principal</h1>
+    <a href="../hotels.html"><img src="../IMG/Logos/casa1.png" alt="Casa" width="50" height="50"></a>
+    <h1 style="color: rgba(5, 109, 57, 0.733);font-size: 200%;">Experiencias</h1>
+    <a href="../HTML/experiencia.html"><img style="border-radius: 20px;" src="../IMG/Experiencias/Exp.jpg" alt="Experiencias" width="350" height="150"></a>
+    <br>
+    <br>
+    <br>
+    <h1 style="color:rgba(87, 7, 7, 0.884);font-size: 200%;">Mas vendidos</h1>
+    <a href="../HTML/hotel1.html"><img style="border-radius: 20px;" src="../IMG/Hoteles/wyndham.jpg" alt="Hotel 2" width="350" height="150"></a>
+    <br>
+    <br>
+    <a href="../HTML/hotel2.html"><img style="border-radius: 20px;" src="../IMG/Hoteles/hotel ramada.jpg" alt="Hotel 2" width="350" height="150"></a>
+    <br>
+    </nav>
+  
+  <article>
+    <h1>Reserva</h1>
+    <p>Llene los siguientes campos.</p>
+    <form>
+      <label for="fname">Nombres:</label><br>
+      <input type="text" id="nombre" name="nombre"><br>
+      <label for="lname">Apellidos:</label><br>
+      <input type="text" id="apellidos" name="apellidos"><br>
+      <label for="lname">Correo electronico:</label><br>
+      <input type="text" id="Correo" name="Correo">
+    </form>
+    <h2>Habitación</h2>
+    <form>
+      <input type="radio" id="rangE1" name="personas" value="1">
+      <label for="rangE1">Habitación 1</label><br>
+      <input type="radio" id="rangE2" name="personas" value="2">
+      <label for="rangE1">Habitación 2</label><br>
+    </form>
+    <h2>Número de personas</h2>
+    <form>
+      <input type="radio" id="rangE1" name="personas" value="1">
+      <label for="rangE1">1</label><br>
+      <input type="radio" id="rangE2" name="personas" value="2">
+      <label for="rangE1">2</label><br>
+      <input type="radio" id="rangE3" name="personas" value="3">
+      <label for="rangE1">3</label><br>
+      <input type="radio" id="rangE4" name="personas" value="4">
+      <label for="rangE1">4</label><br>
+      <input type="radio" id="rangE5" name="personas" value="5">
+      <label for="rangE1">5</label>
+    </form>
+    <h2>Otros servicios</h2>
+    <form>
+      <input type="checkbox" id="adicional" name="redS1" value="Lavandería">
+      <label for="Facebook">Lavandería.</label><br>
+      <input type="checkbox" id="adicional2" name="redS2" value="Nevera">
+      <label for="vehicle2">Nevera.</label><br>
+      <input type="checkbox" id="adicional3" name="redS3" value="Minibar">
+      <label for="vehicle3">Minibar.</label>
+    </form> 
+    <p id="demo"></p>
+
+<button style="background-color:rgb(173, 151, 54) ; border: none; color: white; padding: 10px 20px ; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;   font-size: 20px; border-radius: 10px;cursor: pointer;" type="button" onclick='document.getElementById("demo").innerHTML = "Gracias! un asesor se comunicara con usted pronto."'>Aceptar</button>
+
+ 
+  </article>
+  <footer>
+    <div style="background-color:black;">
+        <p style="color:black;">.....................................</p> 
+        <p style="color:white; text-align:center">Copyright © 2022 Watson Hotel S.A. Todos los derechos reservados.</p>
+        <center><img src="../IMG/Logos/Watson.jpg" alt="Logo del Hotel Watson" width="100" height="75"></center>
+    </div>
+  </footer>
+</section>
+
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wyndham New Yorker Hotel</title>
+</head>
+<style>
+ * {
+  box-sizing:border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background-color:  black;
+  padding: 4px;
+  text-align: center;
+  font-size: 1px;
+  color: white;
+  height: 210px;
+}
+
+nav {
+  float: left;
+  width: 31%;
+  height: 1500px;
+  background: rgb(148, 138, 82);
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 30px;
+  width: 69%;
+  height: 100%;
+  background-color: beige;
+  height: 1500px; 
+}
+
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer {
+  background-color: black;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  height: 100%;
+}
+
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+h1 {
+    color: rgb(124, 106, 2);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 175%;
+}
+h3 {
+    color: rgb(148, 138, 82);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 150%;
+}
+p {
+    color: rgb(10, 10, 10);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 150%;
+}
+ul.b {
+  list-style-type: square;
+  ;
+}
+
+.video {
+  background-color: rgb(180, 192, 194);
+  border: 2px solid rgb(165, 111, 39);
+  margin: 20px;
+  padding: 20px;
+}
+table, th,td {
+      border:1px solid rgb(173, 151, 54); 
+
+      
+    }
+</style>
+</head>
+<body>
+
+    
+<header>
+  <h2><img src="../IMG/Logos/Watson.jpg" alt="Logo del Hotel Watson" width="250" height="180"></h2>
+</header>
+
+<section>
+  <nav>
+    <h1 style="color: white;font-size: 200%;">Página principal</h1>
+    <a href="../hotels.html"><img src="../IMG/Logos/casa1.png" alt="Casa" width="50" height="50"></a>
+    <h1 style="color: rgba(5, 109, 57, 0.733);font-size: 200%;">Experiencias</h1>
+    <a href="../HTML/experiencia.html"><img style="border-radius: 20px;" src="../IMG/Experiencias/Exp.jpg" alt="Experiencias" width="350" height="150"></a>
+    <br>
+    <br>
+    <br>
+    <h1 style="color:rgba(87, 7, 7, 0.884);font-size: 200%;">Mas vendidos</h1>
+    <a href="../HTML/hotel1.html"><img style="border-radius: 20px;" src="../IMG/Hoteles/wyndham.jpg" alt="Hotel 2" width="350" height="150"></a>
+    <br>
+    <br>
+    <a href="../HTML/hotel2.html"><img style="border-radius: 20px;" src="../IMG/Hoteles/hotel ramada.jpg" alt="Hotel 2" width="350" height="150"></a>
+    <br>
+    </nav>
+  
+  <article>
+    <h1>Descripción del Hotel</h1>
+    <br>
+    <table style="width:100%">
+        <tr>
+          <th></th>
+          <th style="text-align:center;color:rgb(12, 133, 133); font-size: 150%;">Wyndham New Yorker Hotel </th>
+        </tr>
+        <tr>
+            <td><img src="../IMG/Hoteles/wyndham.jpg" width="400" height="300"></td>
+            <td style="text-align:left;font-size: 120%;">Este hotel rascacielos se encuentra en la zona de Midtown, presenta una decoración de inspiración Art Déco y ofrece comidas las 24 horas. Se halla a menos de 1 km de Times Square y a 162 km de la estación Penn Station. 
+                Las habitaciones del The New Yorker, A Wyndham Hotel están equipadas con WiFi gratuito y TV de pantalla plana. Algunas suites y habitaciones ofrecen vistas al edificio Empire State o al río Hudson. El servicio de conserjería del The New Yorker, A Wyndham Hotel puede reservar entradas para Broadway, visitas guiadas, mesas en restaurantes y mucho más. También hay una tienda de regalos, un centro de negocios y un centro de fitness.</td>    
+          </tr>
+      </table>
+      <p></p>
+      <p></p>
+      <p></p>
+      <hr>
+      <table style="width:100%">
+        <tr>
+          <th>Servicios populares</th>
+          <hr>
+   
+        </tr>
+        <tr>
+            <td style="text-align:center;">WiFi gratis</td>
+            <td style="text-align:center;">Habitaciones familiares</td>
+            <td style="text-align:center;">Habitaciones sin humo</td>
+            <td style="text-align:center;">Gimnasio</td>
+            <td style="text-align:center;">Admite mascotas</td>
+          </tr>
+       
+       
+      </table>
+      <br>
+
+      <table style="width:100%; background-color:silver">
+        <tr>
+        <th>Imágenes</th>
+        <th>Descripción</th>
+        <th>Capacidad</th>
+        <th>Precio</th>
+        </tr>
+        <tr><div class="th">
+            <td><img src="../IMG/Hoteles/wy2cs.jpg" width="200" height="250"></td>
+            <td>Habitación Estándar con 2 camas dobles. Solo quedan 4 habitaciones en nuestra web.</td>
+            <td>4</td>
+            <td>$390/noche</td>
+        </tr>
+        <tr>
+            <td><img src="../IMG/Hoteles/wy1g.jpg" width="200" height="250"></td>
+            <td>Habitación Estándar - 1 cama grande. Solo quedan 6 habitaciones en nuestra web</td>
+            <td>2</td>
+            <td>$170/noche</td>
+
+    </table>
+    <br>
+    <button onclick="location.href='pagos.html'" style="background-color:rgb(173, 151, 54) ; border: none; color: white; padding: 10px 20px ; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;   font-size: 20px; border-radius: 10px;cursor: pointer;" >Reserva ahora!</button>
+  </article>
+  <footer>
+    <div style="background-color:black;">
+        <p style="color:black;">.....................................</p> 
+        <p style="color:white; text-align:center">Copyright © 2022 Watson Hotel S.A. Todos los derechos reservados.</p>
+        <center><img src="../IMG/Logos/Watson.jpg" alt="Logo del Hotel Watson" width="100" height="75"></center>
+    </div>
+  </footer>
+</section>
+
+<body>
+    
+</body>
+</html>
